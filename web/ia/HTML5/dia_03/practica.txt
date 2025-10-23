@@ -20,3 +20,30 @@ Un video corto de presentación o fondo
 Integra estos recursos en index.html.
 Usa etiquetas <img>, <audio> y <video> correctamente.
 Verifica que las rutas funcionen localmente.
+
+🧰 Mini Tarea GIT — Nivel 3: Historial, Diferencias y Reversión
+
+1️⃣ Crea una rama de mejora multimedia
+git switch -c multimedia
+
+2️⃣ Añade tus archivos multimedia y realiza un commit inicial
+git add .
+git commit -m "Añadidos archivos multimedia (imagen, audio, video)"
+
+3️⃣ Realiza una modificación (por ejemplo, cambia el texto de un encabezado) y revisa las diferencias
+git diff
+
+4️⃣ Si quieres revertir los cambios del archivo antes de confirmar:
+git restore index.html
+
+5️⃣ Si ya confirmaste un commit y deseas deshacerlo:
+git log --oneline
+git revert <id_del_commit>
+
+6️⃣ Fusiona la rama con los cambios confirmados
+git switch main
+git merge multimedia
+
+7️⃣ Sube tu nueva versión a GitHub
+git push origin main
+
