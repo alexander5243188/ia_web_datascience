@@ -1,1 +1,25 @@
  
+🧩 Ejercicio Práctico # 1
+
+1. Crea un archivo llamado index.html que cumpla con las siguientes condiciones:
+2. Use la estructura básica de HTML5.
+3. Incluya un título en la pestaña del navegador con tu nombre.
+4. Dentro del <body>, muestra un encabezado principal con el texto “Bienvenido a mi primera página web”.
+5. Agrega un párrafo que describa en una línea por qué quieres aprender programación.
+
+
+GitHub
+Inicializa el repositorio local
+git init
+
+Añade el archivo a la zona de preparacion
+git add index.html
+
+Realizando mi primer commit 
+git commit -m "Día 1: Estructura básica de HTML5"
+
+Verifica el estado del repositorio
+git status
+
+Visualiza el estado de log online 
+git log --oneline
