@@ -1,0 +1,22 @@
+🧩 Proyecto Integrador — “Mi Perfil Web” (Versión Multimedia)
+
+Objetivo:
+Actualizar tu proyecto proyecto_perfil agregando imágenes, audio y video.
+
+✅ Tareas:
+
+Crea carpetas dentro del proyecto:
+
+imagenes/
+audio/
+video/
+
+
+Añade:
+
+Una imagen personal o avatar (foto_perfil.jpg)
+Un audio (puede ser libre o grabación propia)
+Un video corto de presentación o fondo
+Integra estos recursos en index.html.
+Usa etiquetas <img>, <audio> y <video> correctamente.
+Verifica que las rutas funcionen localmente.
