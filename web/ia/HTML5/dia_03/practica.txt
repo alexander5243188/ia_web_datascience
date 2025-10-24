@@ -47,3 +47,27 @@ git merge multimedia
 7️⃣ Sube tu nueva versión a GitHub
 git push origin main
 
+
+//////////////////////////////////
+1. Crear la Rama y Cambiar a Ella
+git checkout -b multimedia
+
+2. Realizar y Confirmar los Cambios
+    Modifica el archivo
+    Añade (Staging) los cambios
+        git add index.html
+    Realiza el commit (Confirmar)
+        git commit -m "Se agregaron ajustes y elementos multimedia en index.html"
+
+3. Volver a main y Fusionar
+    Volver a la rama principal:
+        git checkout main
+    Fusionar la rama multimedia en main
+        git merge multimedia
+    Opcional: Eliminar la rama multimedia
+        git branch -d multimedia
+    
+Para subir tus cambios a GitHub
+git push
+
+
