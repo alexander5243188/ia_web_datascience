@@ -1,0 +1,51 @@
+🧩 Ejercicio Práctico
+
+Crea un formulario de registro de usuario que incluya:
+
+Nombre completo
+
+Email
+
+Contraseña (con validación de mínimo 8 caracteres)
+
+Fecha de nacimiento
+
+Selector de género
+
+Casilla de aceptación de términos
+El formulario no debe usar JavaScript: solo HTML5 con validaciones nativas.
+
+Guarda el archivo como registro.html.
+
+
+***************************
+🧱 Proyecto Integrador
+Pasos guiados en GIT
+
+Abre tu carpeta del proyecto:
+    cd portafolio
+
+Crea una nueva rama para esta sección:
+    git checkout -b seccion-contacto
+
+Crea el archivo del formulario:
+    touch contacto.html
+
+Agrega tu formulario de contacto en HTML5 con validaciones.
+Añade y haz commit:
+    git add contacto.html
+    git commit -m "Añadida sección de contacto con formulario validado en HTML5"
+
+Fusiona los cambios a la rama principal:
+    git checkout main
+    git merge seccion-contacto
+    git push origin main
+
+⚙️ Anexo: Comprobación de conexión SSH con GitHub
+
+Antes de hacer el push, asegúrate de que tu conexión SSH sigue activa:
+ssh -T git@github.com
+
+Si ves un mensaje como:
+“Hi tu_usuario! You’ve successfully authenticated...”
+Tu conexión está correctamente configurada.
