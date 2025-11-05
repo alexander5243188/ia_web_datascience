@@ -1,0 +1,166 @@
+python -m venv env
+ .\env\Scripts\activate
+ pip install "fastapi[standard]"
+
+
+Clase 01
+Resumen
+Python es ampliamente usado, pero su rendimiento a menudo queda corto frente a otros lenguajes. Sin embargo, FastAPI está cambiando esta percepción al combinar la facilidad de Python con una velocidad competitiva. Creada por el colombiano Sebastián Ramírez, FastAPI ha demostrado que es posible construir APIs rápidas y eficientes en puro Python, desafiando a lenguajes como Node.js y Go en términos de rendimiento.
+
+¿Por qué FastAPI es revolucionario en la creación de APIs?
+FastAPI permite desarrollar APIs de alto rendimiento sin complicaciones de configuración, lo que la convierte en una herramienta ideal para aplicaciones que demandan velocidad y escalabilidad. Con este framework, Python puede competir con los lenguajes más rápidos, ofreciendo una experiencia de desarrollo sencilla y poderosa. Algunas características que lo hacen destacar incluyen:
+
+Velocidad: Utiliza las capacidades de Python y aprovecha tipado y optimización de datos para maximizar el rendimiento.
+Simplicidad: Gracias a su diseño intuitivo y buena documentación, se adapta tanto a principiantes como a expertos.
+Escalabilidad: Ideal para aplicaciones de misión crítica, soporta grandes volúmenes de tráfico, usado por empresas de alto nivel.
+¿Quiénes confían en FastAPI para sus proyectos?
+Grandes empresas como Microsoft, Uber y Netflix utilizan FastAPI en aplicaciones que requieren velocidad, escalabilidad y estabilidad. Sectores críticos, como salud y logística, confían en este framework para proyectos de gran envergadura, que manejan millones de solicitudes diarias y necesitan un rendimiento impecable.
+
+¿Qué impacto ha tenido FastAPI en la comunidad de desarrolladores?
+Desde su lanzamiento, FastAPI ha captado la atención de una comunidad activa y en crecimiento. Esta comunidad se encarga de mejorar constantemente el framework, asegurando su evolución y manteniéndolo como una herramienta robusta y actualizada. Además, la documentación de FastAPI es completa y fácil de seguir, lo que facilita su aprendizaje y aplicación.
+
+¿Por qué deberías aprender FastAPI?
+Aprender FastAPI es una excelente decisión para cualquier desarrollador que busque crear APIs rápidas y escalables en Python. Te permitirá llevar tus proyectos a un nivel superior, ya que podrás construir soluciones optimizadas para aplicaciones de alto rendimiento, con un ecosistema de soporte y recursos sólidos.
+
+
+Clase 02
+Resumen
+FastAPI es un framework de Python diseñado para crear APIs rápidas, eficientes y bien documentadas. Este framework es moderno y permite a los desarrolladores conectar sistemas, como servidores y clientes, con pocas líneas de código. Además, genera documentación de forma automática y se destaca por su compatibilidad con el tipado de Python, lo cual facilita el autocompletado en los editores de texto, acelerando el proceso de desarrollo.
+
+¿Por qué elegir FastAPI para construir APIs?
+Rapidez: Aunque Python es conocido por su menor velocidad en comparación con otros lenguajes, FastAPI implementa asincronismo, aprovechando funcionalidades avanzadas para acelerar el rendimiento.
+Facilidad de uso: Su sintaxis es sencilla y directa, lo que reduce la complejidad al escribir código.
+Documentación automática: Una vez creada la API, FastAPI genera la documentación de endpoints de manera automática, facilitando su uso en herramientas como Swagger o Postman.
+Compatibilidad con tipado: Aprovecha el tipado de Python para mejorar la precisión del código y el autocompletado, lo que se traduce en un desarrollo más ágil y seguro.
+¿Cómo funciona FastAPI internamente?
+FastAPI está basado en dos frameworks principales:
+
+Starlette: Gestiona las solicitudes HTTP, permitiendo a la API recibir y responder peticiones de manera eficiente.
+Pydantic: Facilita la creación de modelos de datos. Con estos modelos, puedes estructurar la información para agregar, modificar o eliminar datos en la API de forma controlada y validada.
+¿Cómo puedo explorar más sobre FastAPI?
+Existen múltiples recursos oficiales para profundizar en el uso de FastAPI:
+
+Documentación oficial: Incluye guías detalladas sobre sus funciones principales y ejemplos prácticos.
+Repositorio de GitHub: Permite ver el código fuente y contribuir al desarrollo del framework. Recomendamos explorar las etiquetas como “good first issue” para empezar a colaborar y mejorar FastAPI.
+Discord de la comunidad: Un espacio donde desarrolladores comparten ideas, resuelven dudas y contribuyen al crecimiento de FastAPI.
+¿Qué es OpenAPI y cómo se relaciona con FastAPI?
+FastAPI genera automáticamente un archivo JSON compatible con OpenAPI. Este archivo describe todos los endpoints de la API, sus parámetros y los datos que se pueden enviar. Esta funcionalidad es útil para:
+
+Ver todos los endpoints y sus variables.
+Integrarse fácilmente con Swagger o Postman.
+Probar la API directamente en el navegador usando herramientas de autogeneración como el botón “Try Out” de Swagger.
+¿Cómo comenzar con FastAPI?
+Como reto, intenta instalar FastAPI en tu entorno de desarrollo. La documentación oficial de FastAPI ofrece una guía completa para instalarlo y crear una API básica. Este ejercicio te permitirá familiarizarte con la configuración inicial y prepararte para construir APIs avanzadas en el futuro.
+
+
+Clase 03
+Resumen
+Para trabajar con un framework en Python como FastAPI, siempre es recomendable emplear entornos virtuales. Estos entornos permiten gestionar las dependencias de un proyecto sin interferir con otros. A continuación, se explican los pasos clave para crear y configurar un entorno virtual y desarrollar una primera API básica.
+
+¿Cómo crear un entorno virtual para FastAPI?
+Crear el entorno virtual:
+
+Abre la terminal y navega a la carpeta donde se encuentra tu proyecto. Utiliza el módulo venv de Python para crear un entorno virtual:
+python -m venv vm
+Esto generará un entorno virtual en una carpeta llamada vm dentro de tu proyecto.
+Activar el entorno virtual:
+
+En sistemas Unix, ejecuta el siguiente comando:
+source vm/bin/activate
+Esto permite aislar las dependencias de tu proyecto dentro del entorno virtual.
+¿Cómo instalar FastAPI y sus dependencias?
+Instalar FastAPI:
+
+Con el entorno virtual activo, instala FastAPI:
+pip install "fastapi[standard]"
+Si recibes errores de interpretación, agrega comillas dobles para evitar problemas con las llaves {} que incluyen dependencias adicionales para la ejecución de FastAPI en entornos locales.
+Verificar las dependencias instaladas:
+
+Tras la instalación, puedes listar las dependencias para observar los paquetes añadidos, como Jinja (templates), Markdown (manejo de texto) y Uvicorn (para ejecutar aplicaciones como servidor web).
+¿Cómo crear un primer endpoint con FastAPI?
+Configurar la estructura de archivos:
+
+Crea una carpeta para el proyecto:
+mkdir curso_fastapi_project
+Dentro de esta carpeta, crea un archivo main.py para definir el primer endpoint.
+Desarrollar la API en main.py:
+
+Abre el archivo en tu editor y añade el siguiente código básico:
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {"mensaje": "Hola, Mundo"}
+La función root define un endpoint básico que devuelve un mensaje JSON. Utiliza el decorador @app.get("/") para indicar que este endpoint responde a solicitudes GET en la ruta raíz (/).
+¿Cómo ejecutar y probar la API en desarrollo?
+Iniciar el servidor:
+
+Usa Uvicorn para ejecutar la aplicación:
+uvicorn main:app --reload
+El parámetro --reload activa el modo de desarrollo, permitiendo recargar la API automáticamente cada vez que guardes cambios en el código.
+Verificar en la terminal:
+
+Al ejecutar, Uvicorn muestra la URL de acceso a la API y la documentación generada automáticamente en /docs. Puedes acceder a la API en http://localhost:8000 y la documentación en http://localhost:8000/docs.
+
+
+Clase 04
+Resumen
+Crear un endpoint en FastAPI que devuelva la hora en función del país permite ofrecer una API flexible y personalizable. A continuación, exploramos cómo construir esta funcionalidad con un endpoint dinámico y cómo incluir parámetros adicionales para definir el formato de la hora.
+
+¿Cómo crear un endpoint que devuelva la hora del servidor?
+Función inicial para la hora del servidor
+En el archivo de sincronización (sync), creamos una función llamada time que retorne la hora actual del servidor. Para ello:
+
+Importamos el módulo datetime desde la librería de Python.
+En la función, utilizamos datetime.now() para obtener la hora actual.
+Configurar la función como endpoint
+Para que el endpoint sea accesible, decoramos la función con @app.get("/time"). Este decorador registra el endpoint para que esté disponible en la URL /time.
+
+¿Cómo agregar variables en un endpoint?
+Un endpoint estático es poco común en aplicaciones que requieren personalización. FastAPI permite recibir variables directamente en la URL, por lo que podemos modificar el endpoint para que acepte un código de país y devuelva la hora correspondiente en ese huso horario.
+
+Añadir el código ISO del país
+Modificamos el endpoint y añadimos un parámetro en la URL. Por ejemplo: @app.get("/time/{iso_code}"). Así, cuando el usuario indique el código de país, el sistema sabrá de qué huso horario obtener la hora.
+
+Tipar la variable
+Es esencial declarar el tipo de dato del parámetro iso_code. Al indicar iso_code: str, ayudamos a que FastAPI maneje correctamente el dato, garantizando que se trate de un texto. Esto también permite acceder a métodos específicos de cadenas de texto en Python, como .upper().
+
+¿Cómo ajustar el formato de entrada del parámetro?
+Para mejorar la usabilidad:
+
+Convertimos iso_code a mayúsculas (iso_code.upper()). Así, la entrada será uniforme sin importar cómo el usuario ingrese el código.
+
+Definimos un diccionario que contiene los husos horarios por país, en el que las claves están en mayúsculas. Esto asegura que, al consultar el diccionario, se encuentre el huso horario correcto.
+
+¿Cómo devolver la hora en el huso horario del país?
+Obtener el huso horario
+Con el código ISO del país, utilizamos timezone.get(iso_code) para obtener la zona horaria correspondiente.
+
+Formatear la hora según el huso horario
+Importamos el módulo zoneinfo y configuramos la zona horaria del resultado. De este modo, al retornar datetime.now(tz=timezone), se muestra la hora correspondiente al país especificado.
+
+¿Cómo agregar parámetros opcionales para formato de hora?
+Finalmente, para que el usuario pueda decidir el formato de hora:
+
+Añadimos un parámetro opcional (format_24) que indique si se desea la hora en formato de 24 horas.
+En la lógica de la función, verificamos el parámetro y ajustamos el formato de salida para que muestre la hora en el formato deseado.
+
+
+Clase 05
+Clase 06
+Clase 07
+Clase 08
+Clase 09
+Clase 10
+Clase 11
+Clase 12
+Clase 13
+Clase 14
+Clase 15
+Clase 16
+Clase 17
+Clase 18
+Clase 19
+Clase 20

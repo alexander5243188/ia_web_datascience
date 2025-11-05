@@ -1,0 +1,183 @@
+Arquitectura de Proyectos, Entornos y PyPI
+
+Clase_01
+Resumen
+Escribe Python que perdura y escala: calidad, automatización y asincronía son la base para pasar de script funcional a Python Profesional. Con un enfoque práctico, lograrás un código que no se rompe con cada cambio, que permite colaborar en equipo y que acelera tareas de input y output.
+
+¿Por qué calidad, automatización y asincronía en Python marcan la diferencia?
+La diferencia no está en “hacerlo correr”, sino en construir software que resista el paso del tiempo. La calidad evita el caos de estilos y errores. La automatización libera tiempo de tareas repetitivas. La asincronía multiplica la eficiencia en operaciones de input y output con APIs y bases de datos.
+
+Código que evoluciona sin romperse en cada cambio.
+Equipos que hablan el mismo idioma técnico.
+Menos fricción operativa y más foco en valor de negocio.
+Mejor rendimiento cuando hay espera por I/O.
+¿Qué reglas y herramientas garantizan el mismo idioma del equipo?
+Imagina cinco personas editando un archivo sin reglas: sería un caos. La salida es estandarizar prácticas y exigirlas con herramientas que verifiquen cada cambio sin intervención manual.
+
+¿Qué reglas alinean al equipo en Python?
+PEP 8 para respetar reglas importantes del lenguaje.
+Anotaciones de tipo para claridad y mantenimiento.
+Tests unitarios para validar comportamientos de forma confiable.
+¿Qué herramientas automatizan la calidad sin intervención?
+Formateadores y linters para legibilidad y consistencia.
+Recommit hooks para validar cada cambio antes de subir al repositorio.
+GitHub Actions para ejecutar herramientas de calidad en cada push.
+TaskRunners como Make para evitar recordar comandos largos.
+¿Cómo desarrollar las habilidades clave y qué lograrás al finalizar?
+El objetivo es ejecutar un pipeline de calidad sin fricción y dominar la asincronía para mejorar el rendimiento en I/O. Además, compartirás tu trabajo con la comunidad.
+
+¿Cómo automatizar reglas y configurar un pipeline de calidad?
+Automatizar tus reglas de desarrollo para que se verifiquen siempre.
+Configurar un pipeline completo que valida la calidad sin intervención manual.
+Integrar verificaciones en cada cambio y en cada push.
+¿Cómo dominar la programación asincrónica y refactorizar I/O?
+Dominar la programación asincrónica para optimizar operaciones que esperan respuesta.
+Refactorizar código síncrono a asíncrono, mejorando drásticamente el rendimiento en tareas con APIs o bases de datos.
+¿Cómo publicar en la comunidad y dar el salto profesional?
+Publicar en la comunidad: tu primer aporte open source de Python en PyPI.
+Consolidar disciplina, herramientas y práctica real para construir Python Profesional.
+¿Qué parte te entusiasma más: automatizar la calidad, optimizar I/O con asincronía o publicar en PyPI? Comparte tu experiencia y dudas en los comentarios.
+
+Clase_02
+Resumen
+Domina un flujo real de desarrollo en Python con Platy News, una aplicación de línea de comandos capaz de buscar noticias con APIs y procesarlas con IA. Aprenderás a clonar el repositorio de GitHub, crear entornos virtuales, instalar en modo editable, configurar API keys en .env y ejecutar el comando platynews para obtener resultados con un LLM. Ideal para practicar programación orientada a objetos, typing en Python 3.13, unit testing y conceptos de rendimiento en código legacy.
+
+¿Qué es Platy News y qué lograrás con Python?
+Platy News es una CLI que integra varias fuentes de información para buscar noticias y complementarlas con análisis de IA. Reúne conocimientos desde variables y ciclos hasta entornos virtuales, POO, typing y AsyncIO, guiándote hacia un trabajo más profesional y colaborativo.
+
+Aplicación de línea de comandos con comandos intuitivos en la terminal.
+Búsqueda de noticias con múltiples fuentes: News API, The Guardian y OpenAI.
+Análisis con IA integrado mediante un LLM.
+Python 3.13 como requisito por el uso de typing avanzado.
+Trabajo en equipo y mejora de un código legacy.
+Pruebas unitarias con carpeta test para validar el proyecto.
+¿Cómo clonar e instalar el proyecto paso a paso?
+El proyecto se distribuye en un repositorio con readme que irás mejorando. La estructura incluye paquetes, módulos y la carpeta test con pruebas unitarias. Usarás Visual Studio Code para explorar el código y la terminal para ejecutar comandos.
+
+¿Qué estructura tiene el repositorio y qué herramientas usarás?
+README inicial que documenta requisitos y uso.
+Paquetes y módulos organizados por funcionalidad.
+test con pruebas unitarias para validar el comportamiento.
+Visual Studio Code para editar y ejecutar.
+Terminal para comandos del flujo de instalación.
+¿Qué comandos ejecutar en la terminal?
+Clonación con git clone usando el enlace SSH y apertura en VS Code.
+git clone <URL-SSH>
+cd <carpeta-del-repositorio>
+code -r .
+Creación del entorno virtual con el comando indicado y activación según tu sistema.
+vvm
+# luego activar con el comando que muestre vvm.
+Instalación en modo editable para habilitar el comando platynews.
+vpip install -e
+Verificación rápida del comando (mostrará errores si faltan claves).
+platynews
+¿Cómo configurar API keys y ejecutar comandos con IA?
+La configuración se hace con un archivo .env en la raíz del proyecto. Debes crear el archivo y pegar las API keys siguiendo el readme. Sin estas claves, platynews mostrará errores al iniciar.
+
+¿Dónde crear y pegar las API keys en .env?
+Crea el archivo .env según lo indicado en el readme.
+Genera y copia la clave de News API desde tu cuenta y pégala en .env.
+En OpenAI crea una nueva clave secreta y verifica que tienes saldo activo.
+Regístrate en The Guardian como desarrollador, confirma el correo y copia la clave recibida a .env.
+Guarda el archivo y vuelve a ejecutar platynews.
+¿Cómo probar una consulta con guardian y LLM?
+Abre el readme y toma un ejemplo de uso con un tema como “cambio climático”.
+Ejecuta el comando para preguntar por las “principales causas” usando el source guardian.
+Espera unos segundos para ver la lista de temas procesados por el LLM.
+Si aparece la ayuda de uso en vez de errores, las API keys están bien configuradas.
+
+Buenas prácticas:
+
+Verifica el entorno virtual activo antes de instalar o ejecutar.
+Mantén el readme actualizado con cada cambio.
+Revisa la carpeta test para entender los unit tests del proyecto.
+¿Listo para avanzar? Comenta si ya ejecutaste tu primera búsqueda y si el análisis de IA respondió lo que esperabas.
+
+Clase_03
+Resumen
+Mantener un estilo consistente en Python no tiene por qué ser lento ni manual. Con Ruf puedes formatear automáticamente tu base de código siguiendo PEP 8, reemplazando herramientas tradicionales como Black y Sort, y centralizando reglas en pyproject.toml. Aquí verás cómo instalarlo, ejecutarlo, ajustar comillas y excluir rutas para trabajar mejor en equipo.
+
+¿Qué es Ruf y por qué reemplaza a Black y Sort?
+Ruf se presenta como un reemplazo de Black y se enfoca en formateo automático alineado con PEP 8. Al ejecutarlo, detecta archivos Python y aplica reglas consistentes en todo el proyecto para evitar discrepancias entre integrantes del equipo.
+
+¿Qué cambia Ruf al formatear código Python?
+Agrega saltos de línea donde corresponde según PEP 8.
+Normaliza comillas: convierte comillas simples a dobles por defecto.
+Ajusta espacios y separadores en expresiones y listas.
+Aplica un estilo uniforme en todos los archivos del proyecto.
+¿Cómo asegura consistencia con PEP 8?
+Usa reglas de PEP 8 automáticamente por defecto.
+Permite configurar excepciones cuando un proyecto sigue otras normas.
+Favorece un estándar único para mejorar la colaboración y las revisiones.
+¿Cómo instalar Ruf e integrarlo con pyproject.toml?
+La instalación y configuración viven en el proyecto, lo que facilita reproducir el entorno en cualquier máquina. La dependencia se agrega al grupo de desarrollo y la configuración se guarda en pyproject.toml.
+
+¿Qué comando instalar y ejecutar?
+Instala la dependencia en desarrollo.
+uv add --dev ruff
+Ejecuta el formateo sobre el path actual.
+root format .
+Al ejecutarlo verás un resumen: por ejemplo, archivos reformateados y otros sin cambios. Esto confirma que la herramienta recorrió el proyecto y aplicó las reglas.
+
+¿Cómo configurar el estilo de comillas?
+Si tu equipo prefiere comillas simples, ajusta el quote style en pyproject.toml. Tras guardar, ejecuta de nuevo el comando de formateo para aplicar los cambios.
+
+[tool.ruf]
+quote-style = "single"
+Efecto: el formateador pasará de comillas dobles a comillas simples.
+Recordatorio: si el proyecto ya sigue otras reglas, configúralas aquí para mantener coherencia.
+¿Cómo excluir rutas y aplicar buenas prácticas?
+En proyectos con código generado por algún framework, puedes excluir carpetas o archivos del formateo para respetar su estructura. Esto se hace desde pyproject.toml usando tool.ruf y extend-exclude.
+
+¿Cómo excluir rutas del formateo automático?
+Añade la configuración en tu archivo de proyecto.
+[tool.ruf]
+extend-exclude = [
+  "Platinus/do not format"
+]
+Crea dentro de esa carpeta un .py con comillas simples y ejecuta:
+root format
+Verás que el archivo excluido no se modifica, respetando tu configuración.
+¿Qué buenas prácticas conviene adoptar?
+Configurar Ruf desde el inicio del proyecto para evitar conflictos de estilo.
+Integrar root format en hooks de pre-commit para automatizar el formateo.
+Establecer reglas consistentes en todo el equipo dentro de pyproject.toml.
+¿Listo para ponerlo en marcha? Configura Ruf en un proyecto personal y cuéntame: ¿cuántos archivos fueron modificados y qué cambios notaste?
+
+
+Clase_04
+
+Clase_05
+
+Clase_06
+
+Clase_07
+
+Clase_08
+
+Clase_09
+
+Clase_10
+
+Clase_11
+
+Clase_12
+
+Clase_13
+
+Clase_14
+
+Clase_15
+
+Clase_16
+
+Clase_17
+
+Clase_18
+
+Clase_19
+
+Clase_20
+
+Clase_21
