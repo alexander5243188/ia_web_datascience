@@ -95,6 +95,7 @@ Revisa la carpeta test para entender los unit tests del proyecto.
 ¿Listo para avanzar? Comenta si ya ejecutaste tu primera búsqueda y si el análisis de IA respondió lo que esperabas.
 
 Clase_03
+<<<<<<< HEAD
 Resumen
 Mantener un estilo consistente en Python no tiene por qué ser lento ni manual. Con Ruf puedes formatear automáticamente tu base de código siguiendo PEP 8, reemplazando herramientas tradicionales como Black y Sort, y centralizando reglas en pyproject.toml. Aquí verás cómo instalarlo, ejecutarlo, ajustar comillas y excluir rutas para trabajar mejor en equipo.
 
@@ -145,6 +146,8 @@ Integrar root format en hooks de pre-commit para automatizar el formateo.
 Establecer reglas consistentes en todo el equipo dentro de pyproject.toml.
 ¿Listo para ponerlo en marcha? Configura Ruf en un proyecto personal y cuéntame: ¿cuántos archivos fueron modificados y qué cambios notaste?
 
+=======
+>>>>>>> tkinter
 
 Clase_04
 

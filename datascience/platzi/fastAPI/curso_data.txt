@@ -1,6 +1,7 @@
 python -m venv env
  .\env\Scripts\activate
  pip install "fastapi[standard]"
+<<<<<<< HEAD
 
 
 Clase 01
@@ -52,6 +53,13 @@ Probar la API directamente en el navegador usando herramientas de autogeneració
 ¿Cómo comenzar con FastAPI?
 Como reto, intenta instalar FastAPI en tu entorno de desarrollo. La documentación oficial de FastAPI ofrece una guía completa para instalarlo y crear una API básica. Este ejercicio te permitirá familiarizarte con la configuración inicial y prepararte para construir APIs avanzadas en el futuro.
 
+=======
+ 
+
+Clase 01
+
+Clase 02
+>>>>>>> tkinter
 
 Clase 03
 Resumen
@@ -106,6 +114,7 @@ Al ejecutar, Uvicorn muestra la URL de acceso a la API y la documentación gener
 
 
 Clase 04
+<<<<<<< HEAD
 Resumen
 Crear un endpoint en FastAPI que devuelva la hora en función del país permite ofrecer una API flexible y personalizable. A continuación, exploramos cómo construir esta funcionalidad con un endpoint dinámico y cómo incluir parámetros adicionales para definir el formato de la hora.
 
@@ -148,6 +157,8 @@ Añadimos un parámetro opcional (format_24) que indique si se desea la hora en 
 En la lógica de la función, verificamos el parámetro y ajustamos el formato de salida para que muestre la hora en el formato deseado.
 
 
+=======
+>>>>>>> tkinter
 Clase 05
 Clase 06
 Clase 07
