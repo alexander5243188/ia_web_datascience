@@ -6,7 +6,7 @@ function App() {
   return (
     <> 
       <div>
-        <h2>Lenguajes de programacion</h2>
+        <h2>Lenguajes de programación</h2>
         <ul>
           {
             items.map((item, index) => (
