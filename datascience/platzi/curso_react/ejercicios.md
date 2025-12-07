@@ -242,7 +242,7 @@ Entendiendo que el enfoque es en **props**, y manteniendo la estructura de los e
 
 -----
 
-## 8\. 🗺️ Ejercicio de Props de Objeto Anidado
+## 8\. 🗺️ Ejercicio de Props de Objeto Anidado (TE QUEDASTA AQUI)
 
 **Objetivo:** Pasar un objeto complejo con propiedades anidadas y acceder a ellas en el componente hijo.
 
