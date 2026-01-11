@@ -11,8 +11,8 @@ import { View,Text, StyleSheet} from 'react-native';
 export default function HomeScreen() {
   return (
    <View style={styles.container}>
-    <Text>Rosa Nela Culona</Text>
-    <Text>Rosa Nela tetona ardiente.</Text>
+    <Text>Estoy programando en reactnative</Text>
+    <Text>Es muy emocionante.</Text>
     <Link href="/(tabs)/about">Ir sobre mi</Link>
    </View>
   );
