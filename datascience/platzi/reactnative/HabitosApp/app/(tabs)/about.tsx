@@ -7,17 +7,26 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
 import { View,Text, StyleSheet } from 'react-native';
+import {ejemploDestructuracionUsuario} from '@/utils/math'
 
 export default function AboutScreen() {
-  const nombre = "Rosa";
-  const edad = 16;
-  const isPremiun = true;
-  const massages = 5;
+  const nombre = "Mary Paz";
+  const edad = 21;  
+  const isPremiun = true;  
+  const messages = 5;
+  const fecha = new Date();
+  const hora = fecha.getHours();
+  let saludo =  hora < 12 ? "Buenos dias" : hora < 18 ? "Buenas tardes" : "Buenas noches";
 
   return (
    <View style={styles.container}>
-    <Text>Colegiala {nombre}</Text>
-    <Text>tetona ardiente. de edad {edad}</Text>
+    <Text>Hola {nombre}</Text>
+    <Text>En 5 años tendras {edad + 5}</Text>
+    <Text> {isPremiun ? "Plan pago" : "Plan gatruito"} </Text>
+    {messages > 0 && <Text>Tienes {messages} mensajes nuevos</Text>}
+    <Text>Tu edad es {edad}</Text>
+    <Text>{saludo}</Text>
+    <Text>{ejemploDestructuracionUsuario()}</Text>
    </View>
   );
 }
